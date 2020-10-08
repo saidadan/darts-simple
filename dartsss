@@ -1,0 +1,33 @@
+package darts;
+import java.util.*;
+
+public class Darts {
+
+ 
+    public static void main (String args[]){
+        int targetDistance;
+        Scanner MyScanner = new Scanner(System.in);
+        System.out.println("Enter the Target 1,5 or 10");
+        targetDistance=MyScanner.nextInt();
+
+        if(targetDistance > 0 && targetDistance <= 1 ){
+            System.out.println("Score(0,1) 10") ;
+          }
+          else if(targetDistance > 1 && targetDistance <= 5 ){
+            System.out.println("Score(0,5) 5") ;
+          }
+          else if(targetDistance > 5 && targetDistance <=10){
+            System.out.println("Score(0,10) 1") ;
+          }
+          else{
+            System.out.println("Score(out of bound)0") ;
+          }
+  
+      
+       
+
+    }
+
+
+
+}
